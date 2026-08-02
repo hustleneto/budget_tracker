@@ -3081,7 +3081,9 @@ export default function App() {
                                 <span className="text-[8px] font-black bg-teal-100 text-teal-600 px-1.5 py-0.5 rounded-md uppercase tracking-tighter">FAMÍLIA</span>
                               )}
                             </div>
-                            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{t.category}</p>
+                            <p className="text-[10px] font-medium text-slate-400 mt-0.5">
+                              {new Date(t.date).getDate()} {MONTHS_PT_SHORT[new Date(t.date).getMonth()]} {new Date(t.date).getFullYear()}
+                            </p>
                           </div>
                         </div>
                           <div className="text-right flex items-center gap-2">
